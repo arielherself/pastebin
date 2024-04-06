@@ -116,7 +116,7 @@ function App() {
       writeCode(`Sorry, an error occurred.\n\nError Code: ${err.toUpperCase()}`);
     } else if (params.has('success')) {
       const new_loc = params.get('success');
-      writeCode(`Congrats! Your code is available at:\n\n    ${window.location.host}/#${new_loc}\n`);
+      writeCode(`Congrats! Your code is available at:\n\n    https://${window.location.host}/#${new_loc}\n`);
     } else {
       const hash = window.location.hash.slice(1);
       if (hash) {
